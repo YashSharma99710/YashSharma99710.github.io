@@ -1,0 +1,213 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #ff4d05;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: url("Untitled\ design.png");
+    background-attachment: fixed;
+    color: var(--text-color);
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 5px;
+    z-index: 1000;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 2.5px solid gray;
+}
+span {
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transform: all .45s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a.active{
+    color: var(--main-color);   
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section{
+    padding: 160px 15% 120px;
+    
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(yash2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start ;
+    box-shadow: 0px 19px 53px 0px black ;
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 1px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 1px -16px -15px;
+}
+.home-text h3{
+    color: var(--text-color);
+    margin: -26px 0px -2px;
+    font-size: 3rem;
+    font-weight: 700;
+    font-weight: 1.9;
+}
+.home-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 0.8;
+    margin-bottom: 5px;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display: inline-block;
+    padding: 13px 17px;
+    background: var(--main-color);
+    border-radius: 20px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .60s ease;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.btn2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 20px;
+}
+.btn2 span{
+    height: 53px;
+    width: 53px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 51px;
+    border-radius: 50px;
+    margin-right: 16px;
+    transition: all .50s ease-in
+}
+.btn2:hover{
+    transform: scale(0.9) translateY(5px)
+}
+.img{
+    max-width: 400px;
+    height: auto;
+    border-radius: 80px;
+}
+.about-text h1{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 5px -475px -57px
+}
+.about-text p{
+    color: var(--second-color);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    text-align: justify;
+}
+#about{
+    display: flex;
+    justify-content: space-between;
+}
+.about-content{
+    width: 50%;
+}
+.about-title{
+    font-size: 3.5rem;
+}
+.about-subtitle{
+    font-size: 2rem;
+}
